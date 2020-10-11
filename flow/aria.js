@@ -307,7 +307,7 @@ type ARIAPropertyDefinition = {
   | 'token'
   | 'tokenlist'
   | 'tristate',
-  value? : Array<string | boolean>,
+  values? : Array<string | boolean>,
   allowundefined?: boolean,
 };
 
@@ -345,7 +345,7 @@ type ARIARoleRelationConcept = {
 
 type ARIARoleRelationConceptAttribute = {
   name: string,
-  value?: string | number,
+  values?: string | number,
   // These constraints are drawn from the mapping between ARIA and HTML:
   // https://www.w3.org/TR/html-aria
   constraints?: Array<
